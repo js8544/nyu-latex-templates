@@ -1,0 +1,269 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass[9pt]{beamer}
+
+% This file is a solution template for:
+
+% - Talk at a conference/colloquium.
+% - Talk length is about 20min.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Madrid}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\definecolor{light-purple}{HTML}{8900e1}
+\definecolor{nyu-purple}{HTML}{57068c}
+\definecolor{dark-purple}{HTML}{330662}
+\definecolor{grey}{HTML}{b8b8b8}
+
+\setbeamercolor{palette primary}{bg=nyu-purple,fg=white}
+% \setbeamercolor{palette secondary}{bg=dark-purple,fg=white}
+% \setbeamercolor{palette tertiary}{bg=black,fg=white}
+\setbeamercolor{palette quaternary}{bg=dark-purple,fg=white} %section head left side
+\setbeamercolor{structure}{fg=nyu-purple} % itemize, enumerate, etc
+% \setbeamercolor{section in toc}{fg=black} % TOC sections
+
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=nyu-purple,fg=white} %section head right side
+
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{textpos}
+
+\addtobeamertemplate{frametitle}{}{% Choose your logo here
+% \begin{textblock*}{100mm}(0.8\textwidth,-0.78cm)
+% \includegraphics[height=0.7cm]{nyuad-logo}
+
+% \begin{textblock*}{100mm}(0.85\textwidth,-0.75cm)
+% \includegraphics[height=0.7cm]{nyu-logo}
+
+\begin{textblock*}{100mm}(0.77\textwidth,-0.8cm)
+\includegraphics[height=0.8cm]{nyush-logo}
+\end{textblock*}}
+
+\title{Unnecessarily Complicated Research Title} % Presentation title
+
+\author[Smith, Smith, Smith]{John Smith\inst{1}, James Smith\inst{2} and Jane Smith\inst{3}} % Author(s)
+
+\institute[NYU]{
+$^1$New York University
+\hspace{0.3cm}
+$^2$New York University Abu Dhabi
+\hspace{0.3cm}
+$^3$New York University Shanghai} % Institution(s)
+
+\date[Conference Name]% (optional, should be abbreviation of conference name)
+{\today}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{subject1, subject2}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\section{Introduction} 
+\begin{frame}{Primary Introduction Frame}
+  \begin{itemize}
+    \item This is a itemize.
+    \item This is a itemize.
+    \item This is a itemize.
+    \item This is a itemize.
+    \item This is a itemize.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Plain frame}
+    This is a Plain frame
+\end{frame}
+
+\section{Justification}
+\begin{frame}{Justification: blocks}
+  \begin{block}{Block 1}
+  This is Block no.1
+  \end{block}
+
+  \begin{block}{Block 2}
+  This is Block no.2
+  \end{block}
+
+\end{frame}
+
+\section{Objectives}
+\begin{frame}{Objectives}
+  \begin{block}{General Objectives}
+  This is a general objective block
+  \end{block}
+
+  \begin{block}{Specific Objectives}
+  \begin{itemize}
+      \item Specific Objectives 1
+      \item Specific Objectives 2
+      \item Specific Objectives 3
+      \item Specific Objectives 4
+  \end{itemize}
+\end{block}
+
+    
+\end{frame}
+
+\section{Fundamental Theorem}
+\begin{frame}{Fundamental Theorem}
+\begin{enumerate}
+    \item aaa
+    \item bbb
+    \item ccc
+\end{enumerate}
+    
+\end{frame}
+
+\begin{frame}{Fundamental Theorem}
+  \textbf{This} is how you make bold text.
+  \medskip
+
+  \begin{itemize}
+      \item aaa
+      \medskip
+      \item this is how you make skips
+  \end{itemize}    
+  \medskip
+
+  \begin{theorem}[Mass--energy equivalence]
+    $E = mc^2$
+  \end{theorem}
+
+\end{frame}
+
+\section{Methodology}
+\begin{frame}{Methodology}
+  \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+    \column{.45\textwidth} % Left column and width
+      \textbf{Methodology}
+      \begin{enumerate}
+        \item Statement
+        \item Explanation
+        \item Example
+      \end{enumerate}
+
+    \column{.5\textwidth} % Right column and width
+      The second colomn
+
+  \end{columns}
+\end{frame}
+
+\section{Results}
+\begin{frame}{Resultados}
+  \begin{table}
+    \begin{tabular}{l l l}
+      \toprule
+      \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+      \midrule
+      Treatment 1 & 0.0003262 & 0.562 \\
+      Treatment 2 & 0.0015681 & 0.910 \\
+      Treatment 3 & 0.0009271 & 0.296 \\
+      \bottomrule
+    \end{tabular}
+    \caption{Table caption}
+  \end{table}
+\end{frame}
+
+\begin{frame}{Results}
+      
+  \begin{figure}
+      \centering
+      \includegraphics[width=.7\textwidth]{placeholder}
+      \caption{Place holder image}
+      % \label{fig:my_label}
+  \end{figure}
+
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item more work
+    \medskip
+    \item more responsibility
+    \medskip
+    \item more satisfaction
+  \end{itemize}
+    
+\end{frame}
+
+\nocite{*}
+\begin{frame}[allowframebreaks]{Reference}
+\bibliographystyle{unsrt}
+\bibliography{sample.bib}
+\end{frame}
+\end{document}

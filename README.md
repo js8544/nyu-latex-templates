@@ -10,7 +10,11 @@ Edit the main.tex file according to your contents and compile. Switch the logo o
 ![Poster](https://jinshang.me/images/demo-poster.png)
 
 ### Presentation
-![Presentation](https://jinshang.me/images/demo-presentation.png)
+![Presentation1](https://jinshang.me/images/demo-presentation.png)
+
+![Presentation2](https://jinshang.me/images/demo-presentation2.png)
+
+![Presentation3](https://jinshang.me/images/demo-presentation3.png)
 
 
 ## Acknowledgment

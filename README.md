@@ -1,4 +1,4 @@
-This is a latex beamer template for New York University, including customization for Abu Dhabi and Shanghai campus.
+This is a latex beamer template for posters and presentations with New York University's color scheme, including customization for Abu Dhabi and Shanghai campus, made according to [NYU's style guideline](https://www.nyu.edu/employees/resources-and-services/media-and-communications/styleguide.html).
 
 ## Demos
 ### Poster:
